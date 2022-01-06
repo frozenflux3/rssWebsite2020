@@ -9,7 +9,8 @@ from copy import copy
 from werkzeug.utils import secure_filename
 
 
-app = Flask(__name__, template_folder='templates') 
+app = Flask(__name__, template_folder='templates')
+
 
 @app.after_request
 def add_header(r):
@@ -23,14 +24,17 @@ def add_header(r):
     r.headers['Cache-Control'] = 'public, max-age=0'
     return r
 
+
 @app.after_request
 def add_header(response):
     response.cache_control.max_age = 0
     return response
 
-@app.route('/', methods=['POST','GET'])
+
+@app.route('/', methods=['POST', 'GET'])
 def root():
     return render_template('index.html')
+
 
 if __name__ == '__main__':
     app.run(debug=False, threaded=True, use_reloader=True)
