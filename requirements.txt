@@ -1,6 +1,6 @@
 click==7.1.2
 Flask==1.1.2
-Pillow==6.2.2
+Pillow==9.3.0
 Flask-Login==0.4.1
 Flask-SocketIO==3.3.2
 Flask-WTF==0.14.2
