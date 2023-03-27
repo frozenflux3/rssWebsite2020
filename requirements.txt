@@ -17,6 +17,6 @@ MarkupSafe==1.1.1
 passlib==1.7.1
 python-engineio==3.5.1
 python-socketio==3.1.2
-setuptools==44.1.1
+setuptools==65.5.1
 argparse==1.4.0
 viivakoodi==0.8.0
