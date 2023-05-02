@@ -12,7 +12,7 @@ gunicorn==19.10.0
 itsdangerous==1.1.0
 Jinja2==2.11.2
 MarkupSafe==1.1.1
-Werkzeug==1.0.1
+Werkzeug==2.2.3
 MarkupSafe==1.1.1
 passlib==1.7.1
 python-engineio==3.5.1
